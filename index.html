@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Brotein Shake</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="text.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="sidemenu.css">
+  </head>
+<body>
+
+  <!-- side menu -->
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="lab2.html">Home</a>
+      <a href="Workouts.html">Workouts</a>
+      <a href="Splits.html">Splits</a>
+      <a href="Diet.html">Diet</a>
+      <a href="mailto:konradlukasiewicz2027@u.northwestern.edu">Contact</a>
+    </div>
+  </div>
+
+  <!-- nav bar links -->
+  <div class="topnav" id="topnav">
+    <a href="lab2.html" class="logo">
+      <img src="logo_trans.png" alt="Brotein Shake logo">
+    </a>
+    <a class="active" href="lab2.html">Home</a>
+    <a href="Workouts.html">Workouts</a>
+    <a href="Splits.html">Splits</a>
+    <a href="Diet.html">Diet</a>
+    <a href="javascript:void(0);" class="icon" onclick="openNav()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <main>
+    <div class="welcome">
+      <p class="intro-text">WELCOME TO</p>
+      <h1 class="main-title">BROTEIN SHAKE</h1>
+    </div>
+    <section class="hero-choices">
+      <div class="choice">
+        <h2>Want a personalized workout built just for you?</h2>
+        <a href="Workouts2.html" class="cta-btn">CLICK HERE</a>
+      </div>
+
+      <div class="choice">
+        <h2>Not sure what you want?</h2>
+        <a href="Splits.html" class="cta-btn">FIND OUT</a>
+      </div>
+    </section>
+
+
+    <br>
+
+    <!-- title / intro -->
+    <p>Need more information? Click on the buttons below to find out more!</p>
+
+    <!-- buttons to take you to different tabs -->
+    <div class="button-row">
+      <a href="Workouts.html"><button class="button" type="button">Workouts</button></a>
+      <a href="Splits.html"><button class="button" type="button">Splits</button></a>
+      <a href="Diet.html"><button class="button" type="button">Diet</button></a>
+      <a href="mailto:konradlukasiewicz2027@u.northwestern.edu"><button class="button" type="button">Contact Me</button></a>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- external link-->
+    <p>Want to work out but don't want to pay? Teens can go to Planet Fitness for FREE all summer!</p>
+    <a href="https://www.planetfitness.com/summerpass"><button class="purple-button">Claim your free summer pass</button></a>
+    <br>
+    <br>
+
+    <h2> Settings </h2>
+
+    <button class='dark-mode-button' onclick="darkmode()">Toggle dark mode</button>
+    <button class='dark-mode-button' onclick="toggleFont()">Adjust font size</button>
+    <br>
+    <br>
+  </main>
+
+  <script src="theme.js"></script>
+  <script src="sidemenu.js"></script>
+
+  <footer>
+    <p class="footer">&copy; 2025 Brotein Shake.  All rights reserved.</p>
+  </footer>
+</body>
+</html>
