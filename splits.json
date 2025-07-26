@@ -1,0 +1,20 @@
+{
+  "push_pull_legs": {
+    "push": ["chest", "shoulders", "triceps"],
+    "pull": ["back",  "biceps", "rear delts"],
+    "legs": ["quads", "hamstrings", "glutes", "calves"]
+  },
+  "upper_lower": {
+    "upper": ["chest", "shoulders", "triceps", "back", "biceps", "rear delts"],
+    "lower": ["quads", "hamstrings", "glutes", "calves"]
+  },
+  "full_body": {
+    "na": ["chest", "back", "shoulders", "triceps", "biceps", "quads", "hamstrings", "glutes", "calves"]
+  },
+  "arnold": {
+    "chest_back": ["chest", "back"],
+    "shoulders_arms": ["shoulders", "triceps", "biceps"],
+    "legs": ["quads", "hamstrings", "glutes", "calves"]
+  },
+  "custom": {}
+}

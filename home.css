@@ -1,0 +1,96 @@
+/* font */ 
+body {
+  font-family: 'Myriad';
+  background-color: #3a3a3a;
+  color: #FAF9F6;
+  margin: 0 0;
+  font-size: 1.3rem;
+}
+.dark-mode {
+  background-color: #FAF9F6;
+  color: #1f1f1f;
+}
+.big-font {
+  font-size: 2.1rem;
+}
+
+/* nav bar */
+.topnav {
+  background-color: #1f1f1f;
+  border-bottom: 2px solid orange;
+  overflow: hidden;
+  height:18vh;
+}
+.topnav .logo{
+  float:left;
+}
+.topnav .logo img{
+  height:18vh;
+  display:block;
+}
+
+/* tab styling */
+.topnav a:not(.logo):not(.icon) {
+  font-family: 'Track';
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 7.5vh 2vh;
+  padding-top: 8vh;
+  text-decoration: none;
+  font-size: 3vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* tab on hover */
+.topnav a:not(.logo):not(.icon):hover {
+  background-color: #333333;
+  color: orange;
+}
+
+/* current tab */
+.topnav a:not(.logo):not(.icon).active {
+  background-color: #ffa500;
+  color: black;
+}
+
+/* hamburger menu */
+.topnav .icon {
+  display: none;
+  color: white;
+  font-size: 3vh;
+  padding: 7.5vh 2vh;
+  padding-top: 8vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.topnav .icon:hover {
+  background-color: #333333;
+  color: orange;
+}
+
+/* hamburger menu for small screens */
+@media screen and (max-width: 900px) {
+  .topnav a:not(.logo):not(.icon) {
+    display: none;
+  }
+
+  /* show the hamburger icon */
+  .topnav .icon {
+    display: block;
+    float: right;
+    padding: 6vh 5vh;
+    font-size: 5vh;
+    cursor: pointer;
+  }
+
+  topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a {
+    display: block;
+    float: none;
+    text-align: left;
+  }
+}
+

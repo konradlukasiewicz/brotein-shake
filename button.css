@@ -1,0 +1,103 @@
+/* button */
+.button {
+  font-family: 'Track', sans-serif;
+  background-color: #1f1f1f;
+  border: 4px solid orange;
+  color: #FAF9F6;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  height: 15vh;
+  width: 15vw;
+  font-size: 2.4vh;
+  margin: 0;
+  min-width: 120px
+}
+.dark-mode {
+  color: #1f1f1f;
+  background-color: #FAF9F6;
+
+}
+
+.button:hover {
+  background-color: orange;
+  color: black;
+}
+
+/* button */
+.big-button {
+  font-family: 'Myriad';
+  background-color: #FAF9F6;
+  border: 4px solid orange;
+  color: black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  height: 8vh;
+  width: 50vw;
+  font-size: 3vh;
+  margin: auto;
+}
+
+.big-button:hover {
+  background-color: orange;
+  color: black;
+}
+
+.purple-button {
+  background-color: purple;
+  font-family: 'Myriad';
+  border: none;
+  color: white;
+  padding: 2vh 2vh;
+  font-size: 2.4vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-right: 40px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2vw;
+}
+
+.dark-mode-button {
+  font-family: 'Myriad', sans-serif;
+  background-color: #faf9f6;
+  border: 4px solid #1f1f1f;
+  color: #1f1f1f;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  height: 5rem;
+  width: 12rem;
+  font-size: 1.1rem;
+  margin: 0;
+  min-width: 120px;
+  margin-right:2rem;
+}
+
+.dark-mode-button:hover {
+  background-color: #D3D3D3;
+}
+
+@media (max-width: 600px) {
+  .button-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+  }
+}
+@media (max-width: 900px) {
+  .big-button {
+   height: 13vh;
+   font-size: 2vh;
+  }
+}

@@ -1,0 +1,23 @@
+/* each muscle group */
+.text-image-row {
+  display: flex;
+  margin: 40px 0;
+}
+
+.muscle_img {
+  float: right;
+  margin-left: 120px;
+}
+
+.jump-link {
+  color: #87ceeb;
+  text-decoration: none;
+  margin-right: 12px;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.jump-link:hover {
+  color: #1e90ff;
+  text-decoration: underline;
+}
