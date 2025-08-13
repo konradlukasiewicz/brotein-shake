@@ -1,0 +1,217 @@
+[
+  {
+    "name": "Bench Press",
+    "primary": "chest",
+    "type": ["barbell", "dumbbell", "smith machine"]
+  },
+  {
+    "name": "Chest Fly",
+    "primary": "chest",
+    "type": ["machine", "dumbbell", "cable"]
+  },
+  {
+    "name": "Incline Bench Press",
+    "primary": "chest",
+    "type": ["barbell", "dumbbell", "smith machine"]
+  },
+  {
+    "name": "Decline Bench Press",
+    "primary": "chest",
+    "type": ["barbell", "dumbbell", "smith machine"]
+  },
+  {
+    "name": "Chest Press",
+    "primary": "chest",
+    "type": ["machine"]
+  },
+  {
+    "name": "Push Ups",
+    "primary": "chest",
+    "type": ["bodyweight"]
+  },
+  {
+    "name": "Tricep Dips",
+    "primary": "triceps",
+    "type": ["bodyweight", "assisted", "weighted", "machine", "bench"]
+  },
+  {
+    "name": "Tricep Rope Pulldown",
+    "primary": "triceps",
+    "type": ["cable"]
+  },
+  {
+    "name": "Tricep Extension",
+    "primary": "triceps",
+    "type": ["dumbbell", "machine", "cable"]
+  },
+  {
+    "name": "Skull Crushers",
+    "primary": "triceps",
+    "type": ["barbell", "dumbbell", "ez‑bar"]
+  },
+  {
+    "name": "Close‑Grip Bench Press",
+    "primary": "triceps",
+    "type": ["barbell", "smith machine"]
+  },
+  {
+    "name": "Shoulder Press",
+    "primary": "shoulders",
+    "type": ["barbell", "dumbbell", "machine", "smith machine"]
+  },
+  {
+    "name": "Lateral Raise",
+    "primary": "shoulders",
+    "type": ["dumbbell", "cable", "machine"]
+  },
+  {
+    "name": "Front Raise",
+    "primary": "shoulders",
+    "type": ["dumbbell", "cable", "plate"]
+  },
+  {
+    "name": "Face Pull",
+    "primary": "shoulders",
+    "type": ["cable"]
+  },
+  {
+    "name": "Shrug",
+    "primary": "shoulders",
+    "type": ["barbell", "dumbbell", "smith machine"]
+  },
+  {
+    "name": "Bicep Curl",
+    "primary": "biceps",
+    "type": ["dumbbell", "barbell", "ez‑bar", "machine", "cable"]
+  },
+  {
+    "name": "Hammer Curl",
+    "primary": "biceps",
+    "type": ["dumbbell", "machine", "cable"]
+  },
+  {
+    "name": "Chin Ups",
+    "primary": "biceps",
+    "type": ["bodyweight", "assisted", "weighted"]
+  },
+  {
+    "name": "Lat Pulldown",
+    "primary": "back",
+    "type": ["machine", "cable"]
+  },
+  {
+    "name": "Row",
+    "primary": "back",
+    "type": ["barbell", "dumbbell", "cable", "machine"]
+  },
+  {
+    "name": "Pull Ups",
+    "primary": "back",
+    "type": ["bodyweight", "assisted", "weighted"]
+  },
+  {
+    "name": "Reverse Fly",
+    "primary": "rear delts",
+    "type": ["machine", "dumbbell", "cable"]
+  },
+  {
+    "name": "Squat",
+    "primary": "quads",
+    "type": ["barbell", "smith machine", "dumbbell"]
+  },
+  {
+    "name": "Leg Press",
+    "primary": "quads",
+    "type": ["machine"]
+  },
+  {
+    "name": "Hack Squat",
+    "primary": "quads",
+    "type": ["machine"]
+  },
+  {
+    "name": "Leg Extension",
+    "primary": "quads",
+    "type": ["machine"]
+  },
+  {
+    "name": "Bulgarian Split Squat",
+    "primary": "quads",
+    "type": ["dumbbell", "barbell", "bodyweight"]
+  },
+  {
+    "name": "Deadlift",
+    "primary": "hamstrings",
+    "type": ["barbell", "trap bar"]
+  },
+  {
+    "name": "Romanian Deadlift (RDL)",
+    "primary": "hamstrings",
+    "type": ["barbell", "dumbbell"]
+  },
+  {
+    "name": "Leg Curl",
+    "primary": "hamstrings",
+    "type": ["machine"]
+  },
+  {
+    "name": "Hip Thrust",
+    "primary": "glutes",
+    "type": ["barbell", "smith machine", "dumbbell"]
+  },
+  {
+    "name": "Hip Abduction Machine",
+    "primary": "glutes",
+    "type": ["machine"]
+  },
+  {
+    "name": "Calf Raise",
+    "primary": "calves",
+    "type": ["machine", "smith machine", "dumbbell", "barbell", "bodyweight"]
+  },
+  {
+    "name": "Plank",
+    "primary": "core",
+    "type": ["bodyweight"]
+  },
+  {
+    "name": "Leg Raise",
+    "primary": "core",
+    "type": ["bodyweight", "captain's chair", "hanging"]
+  },
+  {
+    "name": "Crunch",
+    "primary": "core",
+    "type": ["bodyweight", "machine"]
+  },
+  {
+    "name": "Cable Woodchopper",
+    "primary": "obliques",
+    "type": ["cable"]
+  },
+  {
+    "name": "Side Plank",
+    "primary": "obliques",
+    "type": ["bodyweight"]
+  },
+  {
+    "name": "Russian Twist",
+    "primary": "obliques",
+    "type": ["bodyweight", "plate", "dumbbell"]
+  },
+  {
+    "name": "Hip Adduction Machine",
+    "primary": "inner thighs",
+    "type": ["machine"]
+  },
+  {
+    "name": "Wrist Curl",
+    "primary": "forearms",
+    "type": ["barbell", "dumbbell"]
+  },
+  {
+    "name": "Reverse Curl",
+    "primary": "forearms",
+    "type": ["barbell", "dumbbell", "ez‑bar"]
+  }
+]

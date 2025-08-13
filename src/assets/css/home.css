@@ -1,0 +1,215 @@
+/* FONT */ 
+body {
+  font-family: 'Myriad';
+  background-color: #3a3a3a;
+  color: #FAF9F6;
+  margin: 0 0;
+  font-size: 1.3rem;
+}
+.dark-mode {
+  background-color: #FAF9F6;
+  color: #1f1f1f;
+}
+.big-font {
+  font-size: 2.1rem;
+}
+
+/* NAV BAR */
+.topnav {
+  background-color: #1f1f1f;
+  border-bottom: 2px solid orange;
+  overflow: hidden;
+  height:18vh;
+}
+.topnav .logo{
+  float:left;
+}
+.topnav .logo img{
+  height:18vh;
+  display:block;
+}
+
+.topnav a:not(.logo):not(.icon) {
+  font-family: 'Track';
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 7.5vh 2vh;
+  padding-top: 8vh;
+  text-decoration: none;
+  font-size: 3vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* tab on hover */
+.topnav a:not(.logo):not(.icon):hover {
+  background-color: #333333;
+  color: orange;
+}
+
+/* current tab */
+.topnav a:not(.logo):not(.icon).active {
+  background-color: #ffa500;
+  color: black;
+}
+
+
+
+/* HAMBURGER MENU */
+.topnav .icon {
+  display: none;
+  color: white;
+  font-size: 3vh;
+  padding: 7.5vh 2vh;
+  padding-top: 8vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.topnav .icon:hover {
+  background-color: #333333;
+  color: orange;
+}
+
+/* hamburger menu for small screens */
+@media screen and (max-width: 900px) {
+  .topnav a:not(.logo):not(.icon) {
+    display: none;
+  }
+
+  .topnav .icon {
+    display: block;
+    float: right;
+    padding: 6vh 5vh;
+    font-size: 5vh;
+    cursor: pointer;
+  }
+
+  topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a {
+    display: block;
+    float: none;
+    text-align: left;
+  }
+}
+
+/* SIDE MENU */
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: auto;
+  right: 0;
+  top: 0;
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.25s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  font-family: 'Track';
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  padding:10px;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+/* RESPONSIVE */
+@media (max-width:900px){
+  .main-title{font-size:4rem;}
+}
+
+
+
+
+/* HOME ONLY BUTTONS */
+.hero-choices{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: none;
+  margin: 3rem 0 2rem;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.choice{
+  background: #1f1f1f;
+  border: 4px solid orange;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.choice h2{
+  margin: 0;
+  font-family: 'Myriad', sans-serif;
+  font-size: 1.6rem;
+  color: #FAF9F6;
+  font-weight: 600;
+}
+
+.cta-btn{
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Myriad', sans-serif;
+  background-color: #FAF9F6;
+  border: 4px solid orange;
+  color: black;
+  border-radius: 20px;
+  padding: 1.2rem 0;
+  font-size: 1.6rem;
+  transition: background-color .3s ease, color .3s ease;
+  width: 100%;
+}
+.cta-btn:hover{
+  background: orange;
+  color: black;
+}
+
+/* stack on mobile */
+@media(max-width: 800px){
+  .hero-choices{
+    grid-template-columns: 1fr;
+  }
+}

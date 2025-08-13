@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Track';
+  src: url('../fonts/track_font.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Myriad';
+  src: url('../fonts/myriad.otf') format('opentype');
+}
+
+main {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.welcome {
+  text-align: center;
+}
+
+.intro-text {
+  font-family: 'Track', sans-serif;
+  /*font-style: italic;*/
+  font-size: 1.75rem;
+  color: #FAF9F6;
+  margin-top: 10vh;
+  margin-bottom: 15px;
+}
+.dark-mode {
+  color: #1f1f1f;
+}
+
+.intro-text-2 > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0;
+  padding: 0 0;
+  margin-bottom: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.main-title {
+  font-family: 'Track', sans-serif;
+  font-size: 7rem;
+  color: orange;
+  /*font-style: italic;*/
+  margin: 0 0;
+}
+
+.footer {
+  text-align: center;
+  margin: 0 0;
+  background: orange;
+  color: #1f1f1f;
+  padding: 1rem 0;
+}
