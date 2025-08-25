@@ -1,18 +1,18 @@
 {
   "chest": [
     "Bench Press",
+    "Chest Fly",
     "Incline Bench Press",
     "Chest Press",
-    "Chest Fly",
     "Decline Bench Press",
     "Push Ups"
   ],
   "triceps": [
-    "Close‑Grip Bench Press",
-    "Skull Crushers",
+    "Tricep Dips",
     "Tricep Rope Pulldown",
+    "Skull Crushers",
     "Tricep Extension",
-    "Tricep Dips"
+    "Close‑Grip Bench Press"
   ],
   "shoulders": [
     "Shoulder Press",
@@ -24,8 +24,7 @@
   "back": [
     "Row",
     "Lat Pulldown",
-    "Pull Ups",
-    "Chin Ups"
+    "Pull Ups"
   ],
   "rear delts": [
     "Reverse Fly",
@@ -39,13 +38,12 @@
   ],
   "quads": [
     "Squat",
+    "Leg Extension",
     "Hack Squat",
     "Leg Press",
-    "Leg Extension",
     "Bulgarian Split Squat"
   ],
   "hamstrings": [
-    "Romanian Deadlift (RDL)",
     "Deadlift",
     "Leg Curl"
   ],
@@ -59,9 +57,9 @@
     "Calf Raise"
   ],
   "core": [
-    "Plank",
     "Crunch",
-    "Leg Raise"
+    "Leg Raise",
+    "Plank"
   ],
   "obliques": [
     "Cable Woodchopper",
@@ -73,6 +71,7 @@
   ],
   "forearms": [
     "Wrist Curl",
+    "Hammer Curl",
     "Reverse Curl"
   ]
 }

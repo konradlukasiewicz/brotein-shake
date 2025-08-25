@@ -4,6 +4,7 @@ import Home from "./components/Home.jsx";
 import CustomWorkout from "./components/CustomWorkout.jsx";
 import Splits from "./components/Splits.jsx";
 import Diet from "./components/Diet.jsx";
+import WorkoutLog from "./components/WorkoutLog";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/custom-workout" element={<CustomWorkout />} />
         <Route path="/splits" element={<Splits />} />
         <Route path="/diet" element={<Diet />} />
+        <Route path="/log" element={<WorkoutLog />} />
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

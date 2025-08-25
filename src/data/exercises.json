@@ -157,7 +157,7 @@
   {
     "name": "Hip Thrust",
     "primary": "glutes",
-    "type": ["barbell", "smith machine", "dumbbell"]
+    "type": ["barbell", "smith machine"]
   },
   {
     "name": "Hip Abduction Machine",
@@ -167,7 +167,7 @@
   {
     "name": "Calf Raise",
     "primary": "calves",
-    "type": ["machine", "smith machine", "dumbbell", "barbell", "bodyweight"]
+    "type": ["machine", "dumbbell"]
   },
   {
     "name": "Plank",

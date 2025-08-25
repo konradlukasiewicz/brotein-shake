@@ -22,6 +22,8 @@ export default function Home() {
           <Link className="cta-btn" to="/splits">FIND OUT</Link>
         </div>
       </section>
+      <Link to="/log"><button className="button">Workout Log</button></Link>
+
 
       <p>Need more information? Click on the buttons below to find out more!</p>
 
@@ -46,6 +48,7 @@ export default function Home() {
       >
         Claim your free summer pass
       </a>
+      <br></br>
     </main>
   );
 }
