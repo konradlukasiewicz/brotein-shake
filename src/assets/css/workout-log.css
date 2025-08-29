@@ -310,3 +310,60 @@
 
 /* Tighten table cell layouts a bit */
 .ex-table td { vertical-align: middle; }
+
+
+/* -------- Mobile expanded workout styling (scoped to mobile app) -------- */
+.mobile-app .workout-bar.mobile-header {
+  border-width: 3px;
+  padding: 0.6rem 0.8rem;
+  position: relative;
+  z-index: 2;
+}
+.mobile-app .workout-bar .workout-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.mobile-app .workout-bar .workout-time {
+  opacity: 0.8;
+  font-size: 0.95rem;
+}
+.mobile-app .workout-bar .chev {
+  font-size: 1.15rem;
+  transition: transform 140ms ease;
+}
+.mobile-app .workout-bar .chev.rot { transform: rotate(180deg); }
+
+/* Keep expansion contained so the page doesn't balloon */
+.mobile-app .workout-details.mobile-details {
+  max-height: 60vh;
+  overflow: auto;
+  background: #2a2a2a;
+  border: 2px solid orange;
+  border-top: none;
+  border-radius: 0 0 16px 16px;
+  padding: 0.5rem 0.7rem 0.7rem;
+  margin-top: 0 !important;
+}
+
+/* Stacked exercise list */
+.mobile-app .ex-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.mobile-app .ex-row {
+  padding: 10px 12px;
+  border-bottom: 1px solid #3a3a3a;
+}
+.mobile-app .ex-row:last-child { border-bottom: none; }
+
+.mobile-app .ex-name {
+  font-weight: 600;
+  font-size: 1.1rem;        /* smaller vs your big table text */
+  margin: 0 0 2px;
+}
+.mobile-app .ex-meta {
+  font-size: 0.95rem;
+  opacity: 0.8;
+  line-height: 1.35;
+}

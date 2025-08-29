@@ -54,3 +54,125 @@ main {
   color: #1f1f1f;
   padding: 1rem 0;
 }
+
+
+/* Portrait-only overlay */
+.rotate-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.9);
+  color: #FAF9F6;
+  display: grid;
+  place-items: center;
+  z-index: 99999;
+}
+.rotate-card {
+  background: #232323;
+  border: 3px solid orange;
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+  text-align: center;
+}
+.rotate-icon {
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+
+/* === MOBILE POLISH: bottom nav + buttons reset === */
+
+/* Reset native button look on phones *only* */
+@media (hover: none) and (pointer: coarse) {
+  button,
+  .button,
+  .big-button,
+  .cta-btn {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 14px;
+    box-shadow: none;
+  }
+}
+
+/* Bottom nav: flat, clean, safe-area aware */
+.bottom-nav {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 56px;
+  background: #121212;
+  border-top: 2px solid orange;
+  z-index: 9999;
+
+  /* iPhone notch support */
+  padding-bottom: env(safe-area-inset-bottom, 0);
+  height: calc(56px + env(safe-area-inset-bottom, 0));
+}
+
+.bottom-tab {
+  flex: 1;
+  height: 100%;
+  background: transparent;
+  border: 0;
+  color: #FAF9F6;
+  font: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.bottom-tab .tab-ic { font-size: 1.05rem; line-height: 1; }
+.bottom-tab .tab-label { font-size: .78rem; opacity: .9; }
+
+/* Active tab highlight: subtle pill + orange bar */
+.bottom-tab.active {
+  background: #1f1f1f;
+  position: relative;
+}
+.bottom-tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: calc(2px + env(safe-area-inset-bottom, 0));
+  left: 24%;
+  right: 24%;
+  height: 3px;
+  border-radius: 999px;
+  background: orange;
+}
+
+/* Make sure the page content isn't hidden behind the nav */
+.mobile-app { 
+  min-height: 100vh;
+  padding-bottom: calc(64px + env(safe-area-inset-bottom, 0));
+}
+
+/* Hide desktop footer on actual phones/tablets (NOT narrow laptops) */
+@media (hover: none) and (pointer: coarse) {
+  footer, .site-footer { display: none !important; }
+}
+
+/* Floating + button for mobile Log tab */
+.fab {
+  position: fixed;
+  right: 16px;
+  bottom: calc(72px + env(safe-area-inset-bottom, 0));
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: orange;
+  color: black;
+  border: none;
+  font-size: 2rem;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,.35);
+  z-index: 10000;
+}
+.fab:active { transform: translateY(1px); }

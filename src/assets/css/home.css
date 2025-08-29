@@ -54,8 +54,6 @@ body {
   color: black;
 }
 
-
-
 /* HAMBURGER MENU */
 .topnav .icon {
   display: none;
@@ -84,7 +82,7 @@ body {
     cursor: pointer;
   }
 
-  topnav.responsive {
+  .topnav.responsive {
     position: relative;
   }
   .topnav.responsive a {
@@ -148,14 +146,10 @@ body {
   }
 }
 
-
 /* RESPONSIVE */
 @media (max-width:900px){
   .main-title{font-size:4rem;}
 }
-
-
-
 
 /* HOME ONLY BUTTONS */
 .hero-choices{
@@ -212,4 +206,13 @@ body {
   .hero-choices{
     grid-template-columns: 1fr;
   }
+}
+
+/* ==================== PHONE/TABLET-ONLY OVERRIDES ==================== */
+/* Hide the desktop top nav ONLY on touch devices (phones/tablets).
+   This will NOT trigger on a narrow laptop window. */
+@media (hover: none) and (pointer: coarse) {
+  .topnav { display: none !important; }
+  /* If you use the slide-out overlay menu, hide it on phones to avoid double navigation */
+  .overlay { display: none !important; }
 }
