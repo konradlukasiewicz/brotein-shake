@@ -5,7 +5,6 @@ import Navbar from "./Navbar.jsx";
 export default function Layout() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // OPTIONAL: if you want dark mode / big font global, keep that here
   const [darkMode, setDarkMode] = useState(false);
   const [bigFont, setBigFont] = useState(false);
 
@@ -22,7 +21,6 @@ export default function Layout() {
 
   return (
     <>
-      {/* Side menu/overlay shared on all pages */}
       <div id="myNav" className="overlay" style={{ width: menuOpen ? "100%" : "0%" }}>
         <button className="closebtn" onClick={() => setMenuOpen(false)}>&times;</button>
         <div className="overlay-content">
@@ -35,8 +33,6 @@ export default function Layout() {
       </div>
 
       <Navbar onOpenMenu={() => setMenuOpen(true)} />
-
-      {/* Page content renders here */}
       <Outlet />
 
       <footer>

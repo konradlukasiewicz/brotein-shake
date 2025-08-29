@@ -12,7 +12,7 @@
   width: 15vw;
   font-size: 2.4vh;
   margin: 0;
-  min-width: 120px; /* <-- missing semicolon fixed */
+  min-width: 120px;
 }
 .dark-mode {
   color: #1f1f1f;
