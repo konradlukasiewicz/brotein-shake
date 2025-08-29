@@ -65,10 +65,10 @@
 /* grid layout for buttons */
 .button-row {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr)); /* desktop: 4 across */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 2vw;
 }
-.button-row a { display: block; } /* make link fill its grid cell */
+.button-row a { display: block; }
 
 .dark-mode-button {
   font-family: 'Myriad', sans-serif;
@@ -102,7 +102,7 @@
     width: 12rem;
   }
   .button-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .button-row .button { width: 100%; } /* fill the grid cell */
+  .button-row .button { width: 100%; } 
 }
 
 /* phones: 1 per row */
