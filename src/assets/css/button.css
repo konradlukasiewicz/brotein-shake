@@ -12,7 +12,7 @@
   width: 15vw;
   font-size: 2.4vh;
   margin: 0;
-  min-width: 120px
+  min-width: 120px; /* <-- missing semicolon fixed */
 }
 .dark-mode {
   color: #1f1f1f;
@@ -59,13 +59,16 @@
   cursor: pointer;
   border-radius: 20px;
   margin-right: 40px;
+  margin-bottom: 50px;
 }
 
+/* grid layout for buttons */
 .button-row {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr)); /* desktop: 4 across */
   gap: 2vw;
 }
+.button-row a { display: block; } /* make link fill its grid cell */
 
 .dark-mode-button {
   font-family: 'Myriad', sans-serif;
@@ -88,16 +91,25 @@
   background-color: #D3D3D3;
 }
 
-@media (max-width: 600px) {
-  .button-row {
-    flex-direction: column;
-    align-items: center;
-    gap: 2vh;
-  }
-}
+/* mid widths: 2 x 2 */
 @media (max-width: 900px) {
   .big-button {
    height: 13vh;
    font-size: 2vh;
   }
+  .button {
+    height: 5rem;
+    width: 12rem;
+  }
+  .button-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .button-row .button { width: 100%; } /* fill the grid cell */
+}
+
+/* phones: 1 per row */
+@media (max-width: 600px) {
+  .button-row {
+    grid-template-columns: 1fr;
+    gap: 2vh;
+  }
+  .button-row .button { width: 100%; }
 }

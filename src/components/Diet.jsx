@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/css/tag.css"; // for .picker-box, .section-title, etc.
+import "../assets/css/tag.css";
 
 export default function Diet() {
   return (

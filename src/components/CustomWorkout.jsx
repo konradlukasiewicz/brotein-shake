@@ -9,7 +9,7 @@ const TAGS = [
 ];
 
 const SPLITS = ["Push Pull Legs", "Upper Lower", "Full Body", "Arnold"];
-const SET_OPTIONS = ["1", "1-2", "2", "2-3", "3"];
+const SET_OPTIONS = ["1", "2", "3"];
 
 const SPLIT_DAYS = {
   "Push Pull Legs": ["Push", "Pull", "Legs"],
@@ -172,7 +172,6 @@ export default function CustomWorkout() {
     <main id="tag-picker">
       <section className="picker-box">
         
-        {/* Split Selection */}
         <div style={{ marginBottom: '24px' }}>
           <button
             className={`dropdown-btn ${activeMethod === 'split' ? 'active' : ''}`}
@@ -199,7 +198,6 @@ export default function CustomWorkout() {
           )}
         </div>
 
-        {/* Day picker (after choosing a split; hidden for Full Body) */}
         {selectedSplit && selectedSplit !== "Full Body" && (
           <div style={{ marginTop: '12px', marginBottom: '8px' }}>
             <h3 style={{ color: '#FAF9F6', marginBottom: '8px' }}>
@@ -219,7 +217,6 @@ export default function CustomWorkout() {
           </div>
         )}
 
-        {/* Muscle Group Select */}
         <div style={{ marginBottom: '24px' }}>
           <button
             className={`dropdown-btn ${activeMethod === 'muscle' ? 'active' : ''}`}
@@ -228,7 +225,7 @@ export default function CustomWorkout() {
               setMuscleDropdownOpen(!muscleDropdownOpen);
             }}
           >
-            Choose by muscle group instead {muscleDropdownOpen && activeMethod === 'muscle' ? "▲" : "▼"}
+            Choose Muscle Group {muscleDropdownOpen && activeMethod === 'muscle' ? "▲" : "▼"}
           </button>
           
           {muscleDropdownOpen && activeMethod === 'muscle' && (
@@ -251,10 +248,8 @@ export default function CustomWorkout() {
           )}
         </div>
 
-        {/* Divider Line */}
         <div className="or-divider" aria-hidden="true" />
 
-        {/* Sets Selection */}
         <div>
           <h2 className="section-title">Choose sets per group:</h2>
           <div id="tag-bar" style={{ marginBottom: '12px' }}>
@@ -279,7 +274,6 @@ export default function CustomWorkout() {
           </button>
         </div>
 
-        {/* Results */}
         {workout.length > 0 && (
           <div style={{ marginTop: '20px' }}>
             <h3 style={{ color: '#FAF9F6', marginBottom: '10px' }}>

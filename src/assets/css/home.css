@@ -59,43 +59,36 @@ body {
 /* HAMBURGER MENU */
 .topnav .icon {
   display: none;
-  color: white;
-  font-size: 3vh;
-  padding: 7.5vh 2vh;
-  padding-top: 8vh;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  float: right;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  color: #fff;
+  width: 18vh;
+  height: 18vh;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  line-height: 1;
+  align-items: center;
+  justify-content: center;
+  transition: background-color .3s ease, color .3s ease;
 }
-.topnav .icon:hover {
-  background-color: #333333;
-  color: orange;
-}
+.topnav .icon:hover { background-color: #333333; color: orange; }
+.topnav .icon svg { width: 56% !important; height: 56% !important; display: block; }
 
 /* hamburger menu for small screens */
 @media screen and (max-width: 900px) {
-  .topnav a:not(.logo):not(.icon) {
-    display: none;
+  .topnav a:not(.logo):not(.icon) { display: none; 
   }
-
-  .topnav .icon {
-    display: block;
-    float: right;
-    padding: 6vh 5vh;
-    font-size: 5vh;
-    cursor: pointer;
-  }
-
-  topnav.responsive {
-    position: relative;
-  }
-  .topnav.responsive a {
-    display: block;
-    float: none;
-    text-align: left;
-  }
+  .topnav .icon { display: flex; }
+  .topnav.responsive { position: relative; }
+  .topnav.responsive a { display: block; float: none; text-align: left; }
+  
 }
 
-/* SIDE MENU */
 
+/* SIDE MENU */
 .overlay {
   height: 100%;
   width: 0;
@@ -151,11 +144,9 @@ body {
 
 /* RESPONSIVE */
 @media (max-width:900px){
-  .main-title{font-size:4rem;}
+  .main-title{ font-size:4rem !important;
+  }
 }
-
-
-
 
 /* HOME ONLY BUTTONS */
 .hero-choices{
